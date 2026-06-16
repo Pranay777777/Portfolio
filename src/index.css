@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@theme {
+  --font-kanit: "Kanit", sans-serif;
+
+  --color-bg: #0C0C0C;
+  --color-bg-card: #141414;
+  --color-bg-card-hover: #1A1A1A;
+  --color-border-subtle: #222222;
+  --color-border-muted: #333333;
+  --color-text-primary: #F5F5F5;
+  --color-text-secondary: #A0A0A0;
+  --color-text-muted: #666666;
+  --color-accent-purple: #8B5CF6;
+  --color-accent-magenta: #EC4899;
+  --color-accent-orange: #F97316;
+}
+
+/* ─── Base ─── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-kanit);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Chrome / Silver Gradient Heading ─── */
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Gradient Accent Button ─── */
+.gradient-btn {
+  background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F97316 100%);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-family: var(--font-kanit);
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gradient-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 30px rgba(139, 92, 246, 0.3);
+}
+
+/* ─── Section Scroll Offset ─── */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* ─── Testimonial Marquee ─── */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Reduced motion: disable marquee, use scroll-snap */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none !important;
+    width: 100% !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .marquee-track > * {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ─── Monospace Pill ─── */
+.mono-pill {
+  font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid var(--color-border-muted);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+/* ─── No Mid-Word Breaks ─── */
+.no-break {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+/* ─── Custom Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-muted);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* ─── Selection Color ─── */
+::selection {
+  background: rgba(139, 92, 246, 0.3);
+  color: #fff;
+}

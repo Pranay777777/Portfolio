@@ -1,0 +1,216 @@
+{
+  "profile": {
+    "name": "Alexander Mitchell",
+    "shortName": "Alex",
+    "tagline": "Crafting scalable systems & intelligent solutions that drive real-world impact.",
+    "role": "Senior Software Engineer",
+    "specialization": "Full-Stack · AI/ML · Cloud Architecture",
+    "location": "San Francisco, CA",
+    "yearsOfExperience": 8,
+    "bio": "I'm a Senior Software Engineer with 8+ years of experience building high-performance applications across the full stack. I specialize in designing scalable distributed systems, integrating AI and machine learning pipelines, and architecting cloud-native solutions on AWS and GCP. I'm passionate about writing clean, maintainable code and mentoring engineering teams to deliver products that make a difference. When I'm not coding, you'll find me contributing to open-source projects or exploring the latest in generative AI.",
+    "avatarSvg": "",
+    "avatarImage": "/avatar.png",
+    "social": {
+      "github": "https://github.com",
+      "instagram": "",
+      "linkedin": "https://linkedin.com",
+      "email": "alex@example.com",
+      "phone": "+1 (555) 123-4567",
+      "website": "https://alexmitchell.dev"
+    }
+  },
+  "skills": {
+    "categories": [
+      {
+        "name": "Languages",
+        "items": ["TypeScript", "Python", "Go", "Rust", "Java", "SQL"]
+      },
+      {
+        "name": "Frontend",
+        "items": ["React", "Next.js", "Vue.js", "Tailwind CSS", "Framer Motion", "WebGL"]
+      },
+      {
+        "name": "Backend",
+        "items": ["Node.js", "FastAPI", "Django", "GraphQL", "gRPC", "PostgreSQL"]
+      },
+      {
+        "name": "AI / ML",
+        "items": ["LangChain", "OpenAI API", "PyTorch", "Hugging Face", "RAG Pipelines", "Vector DBs"]
+      },
+      {
+        "name": "Cloud & DevOps",
+        "items": ["AWS", "GCP", "Docker", "Kubernetes", "Terraform", "CI/CD"]
+      },
+      {
+        "name": "Tools",
+        "items": ["Git", "Figma", "Jira", "Datadog", "Redis", "Kafka"]
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Nexus AI",
+      "role": "Senior Software Engineer",
+      "period": "2022 — Present",
+      "location": "San Francisco, CA",
+      "summary": "Leading the development of an enterprise AI platform that serves 200+ clients. Architecting microservices, building LLM-powered features, and mentoring a team of 6 engineers.",
+      "highlights": [
+        "Designed and shipped a RAG-based document intelligence system processing 10M+ documents monthly",
+        "Reduced API latency by 40% through query optimization and intelligent caching layers",
+        "Led migration from monolith to microservices architecture, improving deployment frequency by 5x",
+        "Mentored 6 junior engineers, establishing code review practices and technical documentation standards"
+      ]
+    },
+    {
+      "company": "CloudScale",
+      "role": "Software Engineer II",
+      "period": "2020 — 2022",
+      "location": "Seattle, WA",
+      "summary": "Built core infrastructure for a cloud-native analytics platform used by Fortune 500 companies. Focused on real-time data pipelines and dashboard systems.",
+      "highlights": [
+        "Built real-time analytics pipeline processing 50K events/second using Kafka and Flink",
+        "Developed interactive dashboard framework adopted by 150+ enterprise customers",
+        "Implemented multi-tenant architecture reducing infrastructure costs by 35%",
+        "Created automated load testing framework that caught 90% of performance regressions pre-deploy"
+      ]
+    },
+    {
+      "company": "DataForge",
+      "role": "Software Engineer",
+      "period": "2018 — 2020",
+      "location": "Austin, TX",
+      "summary": "Full-stack development on a data visualization platform. Shipped features across React frontends and Python backends serving 50K+ monthly active users.",
+      "highlights": [
+        "Shipped a drag-and-drop visualization builder increasing user engagement by 60%",
+        "Optimized PostgreSQL queries reducing report generation time from 30s to 2s",
+        "Built RESTful API layer serving 10M+ requests daily with 99.9% uptime",
+        "Introduced TypeScript across the frontend codebase, reducing production bugs by 45%"
+      ]
+    },
+    {
+      "company": "TechStart Inc.",
+      "role": "Junior Developer",
+      "period": "2016 — 2018",
+      "location": "Portland, OR",
+      "summary": "Started my career building web applications for small businesses. Gained deep experience in React, Node.js, and agile development practices.",
+      "highlights": [
+        "Delivered 12+ client projects on time and within budget as the lead frontend developer",
+        "Built a component library that reduced development time by 30% across projects",
+        "Implemented CI/CD pipeline with GitHub Actions, automating testing and deployment"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "neuralquery",
+      "title": "NeuralQuery",
+      "subtitle": "AI-Powered Code Search Engine",
+      "description": "A semantic code search engine that uses transformer models to understand natural language queries and find relevant code across large repositories. Features include multi-language support, context-aware ranking, and real-time indexing.",
+      "stack": ["Python", "FastAPI", "React", "ChromaDB", "OpenAI", "Docker"],
+      "role": "Creator & Lead Developer",
+      "year": "2024",
+      "link": "https://github.com",
+      "image": "",
+      "highlight": true
+    },
+    {
+      "id": "cloudmesh",
+      "title": "CloudMesh",
+      "subtitle": "Multi-Cloud Infrastructure Manager",
+      "description": "A unified dashboard for managing infrastructure across AWS, GCP, and Azure. Provides cost optimization recommendations, security auditing, and automated scaling policies through an intuitive interface.",
+      "stack": ["Go", "React", "Terraform", "PostgreSQL", "gRPC", "K8s"],
+      "role": "Co-Founder & Backend Lead",
+      "year": "2023",
+      "link": "https://github.com",
+      "image": "",
+      "highlight": true
+    },
+    {
+      "id": "synthwave",
+      "title": "SynthWave Studio",
+      "subtitle": "Browser-Based Music Production",
+      "description": "A web-based digital audio workstation featuring a synthesizer engine, real-time audio processing, and collaborative editing. Built with Web Audio API and WebAssembly for near-native performance.",
+      "stack": ["TypeScript", "Web Audio API", "WebAssembly", "React", "WebSocket"],
+      "role": "Solo Developer",
+      "year": "2023",
+      "link": "",
+      "image": "",
+      "highlight": true
+    },
+    {
+      "id": "datacanvas",
+      "title": "DataCanvas",
+      "subtitle": "Interactive Data Visualization Framework",
+      "description": "An open-source library for creating beautiful, interactive data visualizations with minimal code. Supports 20+ chart types, real-time data streaming, and export to multiple formats.",
+      "stack": ["TypeScript", "D3.js", "Canvas API", "WebGL", "Vite"],
+      "role": "Creator & Maintainer",
+      "year": "2022",
+      "link": "https://github.com",
+      "image": "",
+      "highlight": false
+    },
+    {
+      "id": "securevault",
+      "title": "SecureVault",
+      "subtitle": "Zero-Knowledge Password Manager",
+      "description": "An end-to-end encrypted password manager with zero-knowledge architecture. Features include biometric authentication, secure sharing, and breach monitoring with automatic credential rotation.",
+      "stack": ["Rust", "React Native", "SQLite", "WebCrypto", "WASM"],
+      "role": "Lead Developer",
+      "year": "2022",
+      "link": "",
+      "image": "",
+      "highlight": false
+    },
+    {
+      "id": "eventflow",
+      "title": "EventFlow",
+      "subtitle": "Real-Time Event Processing Pipeline",
+      "description": "A high-throughput event processing system capable of handling 100K+ events per second with exactly-once delivery guarantees. Includes a visual pipeline builder and comprehensive monitoring dashboard.",
+      "stack": ["Go", "Apache Kafka", "Redis", "ClickHouse", "React", "Docker"],
+      "role": "Architect & Developer",
+      "year": "2021",
+      "link": "https://github.com",
+      "image": "",
+      "highlight": false
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of California, Berkeley",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "period": "2012 — 2016",
+      "location": "Berkeley, CA"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "t1",
+      "quote": "Alex is one of the most talented engineers I've worked with. His ability to break down complex problems and deliver elegant solutions is remarkable. He elevated our entire team's engineering standards.",
+      "name": "Sarah Chen",
+      "role": "VP of Engineering, Nexus AI",
+      "avatarColor": "#8B5CF6"
+    },
+    {
+      "id": "t2",
+      "quote": "Working with Alex transformed our infrastructure. He didn't just write code — he architected systems that scaled effortlessly. His expertise in cloud architecture saved us millions in operational costs.",
+      "name": "Marcus Johnson",
+      "role": "CTO, CloudScale",
+      "avatarColor": "#F97316"
+    },
+    {
+      "id": "t3",
+      "quote": "Alex has a rare combination of deep technical expertise and excellent communication skills. He mentored our junior developers with patience and helped establish best practices that improved code quality across the board.",
+      "name": "Priya Sharma",
+      "role": "Engineering Manager, DataForge",
+      "avatarColor": "#EC4899"
+    },
+    {
+      "id": "t4",
+      "quote": "I hired Alex for a critical AI integration project and he exceeded every expectation. His knowledge of LLM architectures and practical implementation skills are genuinely world-class. Highly recommend.",
+      "name": "David Park",
+      "role": "Founder, TechVentures",
+      "avatarColor": "#06B6D4"
+    }
+  ]
+}
